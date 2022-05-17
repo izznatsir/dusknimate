@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="https://cdn.skypack.dev/twind/shim"></script>
+    <title>Vite App</title>
+  </head>
+  <body>
+    <section
+      class="h-96 flex justify-center items-center bg-gray-800 text-white"
+    >
+      <p class="inline-block max-w-sm text-center">
+        A collection of animated sections <em>Alpine JS</em> remake of various
+        websites.
+      </p>
+    </section>
+    <section x-scope="figma">
+      <div class="h-24 flex justify-center items-center bg-gray-900 text-white">
+        Figma
+      </div>
+      <div class="relative h-[400vh] bg-[#c7b9ff]" x-bind="scrolled">
+        <h2
+          class="
+            absolute
+            w-full
+            inline-block
+            mt-24
+            text-center
+            font-bold
+            text-3xl
+          "
+        >
+          Our vision is to
+        </h2>
+        <div class="h-screen sticky top-0 flex justify-center">
+          <svg class="h-screen" viewBox="0 0 1440 1440" preserveAspectRatio="xMidYMid slice">
+            <circle cx="720" cy="720" r="0" fill="#A259FF" x-bind="c1" />
+            <circle cx="720" cy="720" r="0" fill="#C7B9FF" x-bind="c2" />
+            <circle cx="720" cy="720" r="0" fill="#5551FF" x-bind="c3" />
+            <circle cx="720" cy="720" r="0" fill="#699BF7" x-bind="c4" />
+            <circle cx="720" cy="720" r="0" fill="#FF8577" x-bind="c5" />
+            <circle cx="720" cy="720" r="0" fill="#F24E1E" x-bind="c6" />
+            <circle cx="720" cy="720" r="0" fill="#FFC700" x-bind="c7" />
+            <circle cx="720" cy="720" r="0" fill="#0FA958" x-bind="c8" />
+            <circle cx="720" cy="720" r="0" fill="#000000" x-bind="c9" />
+          </svg>
+        </div>
+      </div>
+    </section>
+    <section class="h-[200vh]"></section>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
